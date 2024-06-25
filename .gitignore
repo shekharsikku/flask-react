@@ -1,0 +1,16 @@
+# python virtual vnvironment, editor directories
+.venv
+.idea
+.vscode
+.vercel
+
+# node_modules, python cache, dist folder
+node_modules
+__pycache__
+
+# vnvironment variables
+.env
+.env.*
+
+licence
+*.json
