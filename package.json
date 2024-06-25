@@ -1,0 +1,16 @@
+{
+  "name": "flask-react",
+  "version": "1.0.0",
+  "main": "client/src/main.js",
+  "scripts": {
+    "dev": "concurrently \".venv\\Scripts\\python main.py\" \"npm run dev --prefix client\"",
+    "build": "npm run build --prefix client",
+    "prestart": "npm run build --prefix client",
+    "start": ".venv\\Scripts\\python main.py",
+    "preview": "npm run preview --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "description": "Full Stack App using Flask + React"
+}

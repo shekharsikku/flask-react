@@ -74,7 +74,7 @@ npm install
 
 **Environment Variables Setup**
 
-*Change, **.env.sample** filename to **.env** and add all required fields.*
+_Change, **.env.sample** filename to **.env** and add all required fields._
 
 ```env
 # Server Environment Variables
@@ -141,3 +141,7 @@ http://localhost:8080
 ### 🪄 Code by Shekhar Sharma
 
 ---
+
+### License
+
+This project is licensed under the MIT License - see the [license](license) file for details.
