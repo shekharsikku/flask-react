@@ -14,7 +14,7 @@ app = main_app()
 @app.route("/<path:filename>")
 def hello(filename):
     if server_mode == "deployment":
-        frontend_folder = os.path.join(os.getcwd(), "dist")
+        frontend_folder = os.path.join(os.getcwd(), "client\\dist")
         if not filename:
             filename = "index.html"
         return send_from_directory(frontend_folder, filename)

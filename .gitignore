@@ -7,7 +7,6 @@
 # node_modules, python cache, client/dist folder
 node_modules
 __pycache__
-client/dist
 
 # vnvironment variables
 .env
