@@ -9,7 +9,7 @@ def main():
         if server_mode == "development":
             basicConfig(level=DEBUG)
             app.run(debug=True, host="localhost", port=8070)
-        elif server_mode == "deployment":
+        elif server_mode == "production":
             print("Visit for site preview: http://localhost:8080")
             serve(app=app)
         else:

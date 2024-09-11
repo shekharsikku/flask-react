@@ -13,7 +13,7 @@ app = main_app()
 @app.route("/", defaults={"filename": ""})
 @app.route("/<path:filename>")
 def hello(filename):
-    if server_mode == "deployment":
+    if server_mode == "production":
         frontend_folder = os.path.join(os.getcwd(), "dist")
         if not filename:
             filename = "index.html"

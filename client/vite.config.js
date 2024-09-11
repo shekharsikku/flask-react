@@ -23,4 +23,7 @@ export default defineConfig({
       "/api/post/": "http://localhost:8080",
     },
   },
+  build: {
+    outDir: "../dist", // create static file dist folder in root
+  },
 });

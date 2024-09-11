@@ -79,7 +79,7 @@ _Change, **.env.sample** filename to **.env** and add all required fields._
 ```env
 # Server Environment Variables
 
-MYSQLDB_URI=""
+DATABASE_URI=""
 SECRET_KEY=""
 JWT_SECRET=""
 TOKEN_EXP=""
@@ -92,9 +92,13 @@ DEBUG_SERVER="http://localhost:8070"
 WSGI_SERVER="http://localhost:8080"
 ```
 
-_Token Exp should be minutes in number like 1, 5,.._  
-_Set all cors origin in a string format separated by space: E.g. "http://localhost:5173 http://localhost:4173"_  
-_Server mode should be - development/deployment_
+_Use sql database i'm using mysql and postgressql both_ 
+
+_Token Exp should be minutes in number like 1, 5,.._ 
+
+_Set all cors origin in a string format separated by space: E.g. "http://localhost:5173 http://localhost:4173"_
+
+_Server mode should be - development/production_
 
 **Start Development Server**
 
@@ -114,10 +118,10 @@ _For Debug Mode - if server mode is development_
 http://localhost:5173
 ```
 
-_For WSGI Server - if server mode is deployment_
+_For WSGI Server - if server mode is production_
 
 ```bash
-http://localhost:5173
+http://localhost:4173
 ```
 
 **Test Api Endpoints**
@@ -132,7 +136,7 @@ _For Debug Mode - if server mode is development_
 http://localhost:8070
 ```
 
-_For WSGI Server - if server mode is deployment_
+_For WSGI Server - if server mode is production_
 
 ```bash
 http://localhost:8080
